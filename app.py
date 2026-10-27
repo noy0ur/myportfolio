@@ -65,7 +65,7 @@ a { color: #c4b5fd !important; }
 """, unsafe_allow_html=True)
 
 with st.sidebar:
-    st.markdown("## 🐍 Portfolio")
+    st.markdown("##  Portfolio")
     st.caption("Python • Data • Software")
     section = st.radio(
         "Navigate",
@@ -164,7 +164,7 @@ if section in ["Home", "Contact"]:
     st.write("For opportunities, collaboration, or project discussions:")
     col1, col2 = st.columns(2)
     with col1:
-        st.markdown(f"**GitHub**  \n[Open GitHub profile](https://github.com/{GITHUB_USERNAME})")
+        st.markdown(f"**GitHub**  \n[Open GitHub profile](https://github.com/noy0ur)")
     with col2:
         st.markdown(f"**Email**  \n[{EMAIL}](mailto:{EMAIL})")
     st.caption("Before publishing: replace YOUR-GITHUB-USERNAME and YOUR-EMAIL@example.com in app.py. Never publish passwords, API keys, private data, or personal documents.")
