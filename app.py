@@ -126,10 +126,34 @@ if section in ["Home", "Projects"]:
                 unsafe_allow_html=True,
             )
             st.write("")
-            with st.expander("Repository link / project status"):
-                st.caption("")
-                st.text_input("Github URL", key=f"repo_{title}", placeholder="https://github.com/noy0ur")
-                st.selectbox("Status", ["Published"], key=f"status_{title}")
+            
+with st.expander("Repository link / project status"):
+    st.caption("Explore the project source code and live demo.")
+
+    github_url = st.text_input(
+        "GitHub Repository URL",
+        key=f"repo_{title}",
+        placeholder="https://github.com/noy0ur"
+    )
+
+    demo_url = st.text_input(
+        "Live Project URL",
+        key=f"demo_{title}",
+        placeholder="https://skin-lesion-classifications.streamlit.app/"
+    )
+
+    if github_url.strip().startswith("https://github.com/"):
+        st.markdown(f"[🔗 View Source Code]({github_url})")
+
+    if demo_url.strip().startswith("https://"):
+        st.markdown(f"[🚀 Open Live Demo]({demo_url})")
+
+    st.selectbox(
+        "Status",
+        ["In Progress", "Completed", "Published"],
+        key=f"status_{title}"
+    )
+
 
 if section in ["Home", "Skills"]:
     st.markdown("## Technical Skills")
@@ -152,12 +176,7 @@ if section in ["Home", "About"]:
         "and documenting what I learn. I'm currently strengthening Python, SQL, debugging, testing, "
         "and application development."
     )
-    st.markdown("### What recruiters can review")
-    st.write("- Clear project descriptions and technologies used")
-    st.write("- Source code and README documentation in GitHub")
-    st.write("- Honest project status, limitations, and evaluation")
-    st.write("- Ability to explain design choices and demonstrate the app")
-
+    
 if section in ["Home", "Contact"]:
     st.markdown("## Contact")
     st.write("For opportunities, collaboration, or project discussions:")
