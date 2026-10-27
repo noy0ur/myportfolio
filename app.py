@@ -142,7 +142,7 @@ if section in ["Home", "Skills"]:
     for group, items in skills.items():
         st.markdown(f"### {group}")
         st.write("  ".join([f"`{item}`" for item in items]))
-    st.info("Keep only skills you can explain confidently. Add proficiency levels honestly.")
+    st.info("")
 
 if section in ["Home", "About"]:
     st.markdown("## About Me")
@@ -165,7 +165,7 @@ if section in ["Home", "Contact"]:
     with col1:
         st.markdown(f"**GitHub**  \n[Open GitHub profile](https://github.com/noy0ur)")
     with col2:
-        st.markdown(f"**Email**  \n[{EMAIL}](mailto:{shameershaik1499@gmail.com})")
+        st.markdown(f"**Email**  \n[{EMAIL}](mailto:{EMAIL})")
     st.caption("")
 
 st.divider()
