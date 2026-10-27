@@ -127,9 +127,9 @@ if section in ["Home", "Projects"]:
             )
             st.write("")
             with st.expander("Repository link / project status"):
-                st.caption("Add the actual GitHub repository URL here after verifying the project is uploaded and working.")
-                st.text_input("Repository URL", key=f"repo_{title}", placeholder="https://github.com/username/repository")
-                st.selectbox("Status", ["In progress", "Tested", "Published"], key=f"status_{title}")
+                st.caption("")
+                st.text_input("Github URL", key=f"repo_{title}", placeholder="https://github.com/noy0ur")
+                st.selectbox("Status", ["Published"], key=f"status_{title}")
 
 if section in ["Home", "Skills"]:
     st.markdown("## Technical Skills")
