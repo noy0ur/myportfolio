@@ -9,8 +9,8 @@ st.set_page_config(
 
 # Update these placeholders before publishing.
 NAME = "Sameer Shaik"
-GITHUB_USERNAME = "YOUR-GITHUB-USERNAME"
-EMAIL = "YOUR-EMAIL@example.com"
+GITHUB_USERNAME = "https://github.com/noy0ur"
+EMAIL = "shameershaik1499@gmail.com"
 
 st.markdown("""
 <style>
