@@ -2,12 +2,12 @@ import streamlit as st
 
 st.set_page_config(
     page_title="Sameer Shaik | Python Developer",
-    page_icon="🐍",
+    page_icon="",
     layout="wide",
     initial_sidebar_state="collapsed",
 )
 
-# Update these placeholders before publishing.
+
 NAME = "Sameer Shaik"
 GITHUB_USERNAME = "https://github.com/noy0ur"
 EMAIL = "shameershaik1499@gmail.com"
@@ -73,7 +73,6 @@ with st.sidebar:
         label_visibility="collapsed",
     )
     st.divider()
-    st.caption("Replace the GitHub and email placeholders in app.py before publishing.")
 
 st.markdown(f"""
 <div class="hero">
@@ -97,7 +96,7 @@ if section in ["Home", "Projects", "Skills", "About", "Contact"]:
 
 if section in ["Home", "Projects"]:
     st.markdown("## Featured Projects")
-    st.markdown('<p class="section-note">Project summaries are included below. Add each verified repository URL before sharing this portfolio with recruiters.</p>', unsafe_allow_html=True)
+    st.markdown('<p class="section-note"></p>', unsafe_allow_html=True)
 
     projects = [
         ("Skin Lesion Classification", "Computer vision project using the HAM10000 dataset to explore seven-class skin-lesion image classification. Document the evaluation metrics and limitations clearly.", "Python · TensorFlow/Keras · CNN", "Machine Learning"),
@@ -166,8 +165,8 @@ if section in ["Home", "Contact"]:
     with col1:
         st.markdown(f"**GitHub**  \n[Open GitHub profile](https://github.com/noy0ur)")
     with col2:
-        st.markdown(f"**Email**  \n[{EMAIL}](mailto:{EMAIL})")
-    st.caption("Before publishing: replace YOUR-GITHUB-USERNAME and YOUR-EMAIL@example.com in app.py. Never publish passwords, API keys, private data, or personal documents.")
+        st.markdown(f"**Email**  \n[{EMAIL}](mailto:{shameershaik1499@gmail.com})")
+    st.caption("")
 
 st.divider()
-st.caption(f"© {NAME} • Built with Python and Streamlit • Update this portfolio as projects become tested and published.")
+st.caption(f"© {NAME} • Built with Python and Streamlit •")
